@@ -2,7 +2,7 @@ insert into genre(genre_name)
 	values('Pop'), ('Rock'), ('Rap'), ('Jazz'), ('Metall');
 	
 insert into executer(name)
-	values('Eminem'), ('Linkin Park'), ('Rob Zombie'), ('Pink'), 
+	values('Eminem'), ('Linkin Park'), ('Rob Zombie'), ('Pink'),
 		  ('Louis Armstrong'), ('AC/DC'), ('Кровосток'), ('Evanesense');
 		  
 insert into GenreExecuter(genre_id, executer_id)
@@ -53,6 +53,25 @@ update album
 update track 
 	set name_track = 'What my Wonderful World'
 	where duration = 140
-	     
+
+insert into executer(name)
+	values('Lana Del Rey '); 
+	
+insert into album (album_name, release_date)
+	values('Norman Fucking Rockwell', 2019);	
+
+insert into executeralbum (executer_id, album_id)
+	values(10,9);	
+
+insert into track (name_track, duration, album_id) 
+	values('Norman Fucking Rockwell', 248, 9),
+	      ('Mariners Apartment Complex', 246, 9)
+	      
+insert into GenreExecuter(genre_id, executer_id)
+	values(1,1)	      
+	      
+
+	
+	
 
 	
